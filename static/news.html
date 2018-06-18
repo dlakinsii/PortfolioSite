@@ -38,6 +38,9 @@
 <!-- Page content -->
 <div class="main">
 	<h2> News</h2>
+	<strong> June 18, 2018</strong>
+	<p>I have created a C# console application that takes ip addresses as command line arguments and compares them to app.forestry.io/ips.text. Any argument strings not found on the forestry list display a warning with the offending ip, and any on the Forestry list not provided as an argument display a different warning the offending ip. If all goes well it exits with a status code of 0 and a successful validation message. Otherwise, it exits with a status code of 1. </p>
+	<p>My original implementation only took one argument and either said it was valid or it was not. I had incorrectly assumed that the app would be called separately for each ip address. This way was a bit trickier, but I'm happier with the end result. I also moved the url string from main() to ConfigurationManager.AppSettings. Eventually this job will run every morning. </p>
 	<strong> June 14, 2018</strong>
 	<p> I have created this website to sharpen my html and css skills in anticipation of rebuilding one of our websites over the summer at my internship </p>
 	<br>
