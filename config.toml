@@ -1,3 +1,24 @@
-baseURL = "https://lance.netlify.com"
+baseURL = "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+copyright = "All rights reserved - 2018"
+description = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+metadescription = ""
+
+[outputs]
+home = ["HTML", "CSS","JSON"]
+
+[params]
+author = "Lance Akins"
+authorbio = ""
+authorlocation = "Jacksonville, FL"
+authorwebsite = ""
+cover = ""
+
+hjsstyle = "default"
+logo = ""
+
+
+pageNotFoundTitle = ""
+pageNotFoundSubtitle = ""

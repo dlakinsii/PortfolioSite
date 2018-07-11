@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ $sidebar := .Params.sidebar }}
+  <div class="wrapper style1">
+    <section id="main" class="container">
+      <div class="row">
+        {{/* PRIMARY CONTENT */}}
+        <div {{ if eq $sidebar.show_sidebar true }} class="8u 12u(narrower)"{{ end }}>
+          <section id="content" class="box">
+            {{ with .Params.featured_image }}
+            <a href="#" class="image fit">
+              <img src="{{ . }}">
+            </a>
+            {{ end }}
+            {{ .Content }}
+          </section>
+        </div>
+        {{/* SIDEBAR */}}
+        {{ partial "sidebar-modules.html" . }}
+      </div>
+</section>
+</div>
+{{ end }}
